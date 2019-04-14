@@ -2,10 +2,11 @@
 
 ReactJS boilerplate ready to be cloned.
 
-Only functional components.
+Only functional components and hooks.
 
 Includes:
 
+* Hooks
 * Context
 * Reducer
 * Router
