@@ -1,8 +1,6 @@
 ## ReactJS starter
 
-ReactJS boilerplate ready to be cloned.
-
-Only functional components and hooks.
+ReactJS boilerplate with functional components and hooks.
 
 Includes:
 
@@ -17,6 +15,7 @@ Includes:
 ## Usage
 Start dev server:  `npm start`
 
+Build project: `npm build`
 
 ## Prettier
 Format src folder: `npm run format`
