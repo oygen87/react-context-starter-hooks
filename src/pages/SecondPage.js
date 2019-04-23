@@ -9,7 +9,7 @@ const SecondPage = () => {
     <div className="container">
       <Header title="Second Page" />
       <p>
-        Value from context : <h2>{moneyContext.money}</h2>
+        Value from context : <h2>{moneyContext.state.money}</h2>
       </p>
       <NavLink to="/">Back to home</NavLink>
     </div>

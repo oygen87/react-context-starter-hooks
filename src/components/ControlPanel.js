@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MoneyContext } from "../store/MoneyContext";
-import { ADD_CUSTOM, ADD_ONE, ADD_TEN } from "../store/MoneyReducer";
+import { ADD_CUSTOM, ADD_ONE, ADD_TEN } from "../store/MoneyContext";
 
 const ControlPanel = () => {
   const moneyContext = useContext(MoneyContext);
@@ -16,7 +16,6 @@ const ControlPanel = () => {
   const add777 = () => {
     moneyContext.dispatch({ type: ADD_CUSTOM, payload: 777 });
   };
-
   return (
     <div>
       <button className="btn btn-success mr-3" onClick={addOne}>
@@ -28,7 +27,8 @@ const ControlPanel = () => {
       <button className="btn btn-success " onClick={add777}>
         Add 777
       </button>
-      <h3>{moneyContext.money}</h3>
+      <h3>{moneyContext.state.money}</h3>
+      <p>current bank: {moneyContext.state.bank}</p>
     </div>
   );
 };
